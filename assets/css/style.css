@@ -1,0 +1,68 @@
+
+h1, h3 {
+  color: green;
+  padding: 0.5rem;
+}
+
+div {
+  color: green
+}
+
+p {
+  color: white;
+  font-weight: bold;
+}
+
+.title {
+  color: green;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+@media (max-width: 539px) { /* Use max-width to target screens smaller than 540px */
+  .header-container {
+    flex-direction: column;
+    text-align: center; /* Center text within header items */
+  }
+}
+
+.header-item {
+  color: white;
+  background-color: green;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  margin: 0.2rem 2rem 0.2rem 2rem;
+}
+
+.quien-soy-container {
+  display: flex;
+  color: black;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 2px solid green;
+  
+}
+
+.profile-pic-container {
+  border-radius: 20px;
+}
+
+.my-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+}
+
+.footer-container {
+  color: white;
+  padding: 2rem;
+  background-color: green;
+  margin-top: 1rem;
+}
