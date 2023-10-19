@@ -1,4 +1,8 @@
 
+.navbar {
+  background-color: white; /* Set the background color to white */
+}
+
 h1, h3 {
   color: green;
   padding: 0.5rem;
@@ -15,6 +19,14 @@ p {
 
 .title {
   color: green;
+}
+
+@media (max-width: 991.98px) {
+  .custom-toggler {
+      position: absolute;
+      top: 0;
+      right: 0;
+  }
 }
 
 .header-container {
@@ -65,4 +77,45 @@ p {
   padding: 2rem;
   background-color: green;
   margin-top: 1rem;
+}
+
+.container-education {
+  display: flex;
+  flex-direction: row; /* or column for vertical layout */
+  justify-content: space-between; /* Distribute space evenly */
+  align-items: center; /* Vertically center items */
+  padding: 2rem 2rem;
+}
+
+@media (max-width: 539px) { /* Use max-width to target screens smaller than 540px */
+  .container-education {
+    flex-direction: column;
+  }
+}
+
+.item-education {
+  color: black;
+}
+
+.container-experience {
+  display: grid;
+  grid-gap: 20px; /* Add spacing between grid items */
+  grid-template-columns: repeat(2, 1fr); /* Two columns for all screens */
+  justify-content: center;
+  align-items: center; /* Center vertically within the grid cell */
+  justify-items: center; /* Center horizontally within the grid cell */
+}
+
+/* Media query for computer screens (greater than 539px) */
+@media (min-width: 540px) {
+  .container-experience {
+    grid-template-columns: repeat(3, 1fr); /* Three columns on computer screens */
+  }
+}
+
+/* Media query for phone screens (up to 539px) */
+@media (max-width: 539px) {
+  .item-experience {
+    grid-column: span 1; /* Make items span one column on phone screens */
+  }
 }

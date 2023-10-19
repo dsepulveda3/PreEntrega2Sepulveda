@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" media="screen">
 </head>
 
 
@@ -17,22 +18,55 @@
 
 <body>
     <header class="header-container">
-        <a class="header-item" href="/index.html">Inicio</a>
-        <a class="header-item" href="/pages/sobremi.html">Sobre Mi</a>
-        <a class="header-item" href="/pages/experiencia.html">Experiencia</a>
-        <a class="header-item" href="/pages/educacion.html">Educación</a>
-        <a class="header-item" href="/pages/contacto.html">Contacto</a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <div class="header-item">Diego's Site</div>
+                <!-- Move the burger button to the right -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/sobremi.html">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/experiencia.html">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/educacion.html">Educación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <section>
-            <div class="title">
-                <h1>Experiencia Page</h1>
+            <h1 class="title">Experiencia Page</h1>
+            <div class="container-experience">
+                <div class="item-experience">Experience 1</div>
+                <div class="item-experience">Experience 2</div>
+                <div class="item-experience">Experience 3</div>
+                <div class="item-experience">Experience 4</div>
+                <div class="item-experience">Experience 5</div>
+                <div class="item-experience">Experience 6</div>
             </div>
         </section>
     </main>
     <footer class="footer-container">
         <p>Creado el 2023</p>
     </footer>
+    <script src="/assets/js/bootstrap.bundle.min.js" defer></script>
 </body>
 
 </html>
