@@ -1,0 +1,20 @@
+@import './variables';
+
+.navbar {
+	background-color: $background-color_1;
+}
+h1 {
+	color: $color_1;
+	padding: 0.5rem;
+}
+h3 {
+	color: $color_1;
+	padding: 0.5rem;
+}
+div {
+	color: $color_1;
+}
+p {
+	color: $color_2;
+	font-weight: bold;
+}
